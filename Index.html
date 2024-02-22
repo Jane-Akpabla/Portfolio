@@ -14,19 +14,16 @@
 </head>
 
 <body>
-
-
   <!-- 
       =================================
       
       Nav Bar section
       =========================== 
-    
     -->
   <section>
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Works</a></li>
+        <li><a href="#work">Works</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -51,35 +48,29 @@
     <div class="container">
       <div class="section1">
         <div class="head-img">
-          <img src="https://avatars.githubusercontent.com/u/70813725?v=4" alt="" />
+          <img src="/Assest/portrait.jpeg" alt="" />
         </div>
         <div class="img-article">
-          <h1>Hi, I am Taleh, Student at Algoritmika</h1>
+          <h1>Hi, I am Janet Akpabla</h1>
           <p class="about">
-            This project was my first responsiv portfilo website. I learnt a
-            bit about html using div, nav, image and link tags. I also created
-            a css file and picked out tags using classes and direct names and
-            stylised my html to make it look nicer. I then learnt how to use
-            the terminal and then how to use git, so I could backup files to
-            github and keep track of changes, etc.
-          </p>
-
+            Energetic software engineering student, With a Passion for software development, system analysis, data analytics, and graphic design.<br>
+             Eager to create engaging user experiences and leverage data insights for impactful solutions.
+              Let's bring ideas to life!  Driven to make a positive impact through innovative software solutions. 💻🧑‍💻.
+            
           <!--  This button  to link to download the resume -->
           <a href="#" class="Download "><button
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('/Assest/Janet.pdf')"
             >Download Resume</button></a>
         
           <!--  Gtiub and Linkedin links  -->
           <div class="social-icons">
-            <a href=""> 
-              <img class="socialicons" src="/img/github.png" alt=" Github">
+            <a href="https://github.com/"> 
+              <img class="socialicons" src="/Assest/github.png" alt=" Github">
                  </a>
-            <a href=""> 
-              <img class="socialicons" src="/img/linkedin.svg" alt="">
+            <a href="www.linkedin.com/in/janet-akpabla-84jk"> 
+              <img class="socialicons" src="/Assest/linkedin.png" alt="linkedin">
             </a>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -100,23 +91,29 @@
         <p class="v-p"><a href="">View All</a></p>
       </div>
       <div class="recent-posts">
-        <div class="post-item">
-          <h1>Making a design system from scratch</h1>
-          <p>12 Feb 2022 Design | Pattern</p>
-          <p class="post-article">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
-          </p>
         </div>
-        <div class="post-item">
-          <h1>Get started with Flexbox.</h1>
-          <p>13 Feb 2022 Design | Css</p>
-          <p class="post-article">
-            Flexbox is a layout in CSS3. Flexbox is used to make responsive
-            layouts and components on a webpage. Using is a good choice to
-            use in CSS so you can design the page responsively. Here is a
-            basic guide to getting starting with flexbox.
+        <div class="post-item" id="work">
+          <h1 class="experience-container">EXPERIENCE</h1>
+                 <div class="details-container">
+                  <img
+                    src="/Assest/experience.png"
+                    alt="work experience"
+                    class="icon"/>
+                    <p> Quality Assurance Officer,less than a year <br>
+                      2+ years As a Cashier and sales representative</p>
+          <div class="experience-containerr">
+            <img
+              src="/Assest/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>
+            B.Sc. Bachelors Degree<br>
+                currently a student</p>
+          </div>
+        </div>
+        <div class="text-container">
           </p>
         </div>
       </div>
@@ -124,8 +121,6 @@
   </section>
 
   <!--  END OF THE EXPERIENCE SECTION  -->
-
-
   <!--  
       
       ===========================
@@ -138,28 +133,81 @@
         <p>Featured works</p>
       </div>
 
+      <!----------EXPERIENCE================ --->
+      <div class="language-div">
+          <article class="">
+                 
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                 
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                 
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  
+                  <div>
+                    <h3>C++</h3>
+                    <p>Basic</p>
+                  </div>
+                </article><br><br>
+
+                <article class="">
+                  <div>
+                    <h3>Data Analytics with Power BI</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article class="">
+                 
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article><br><br>
+                <article class="">
+                 
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+       </div>
+              
+
 
       <!-- PROJECT ONE  -->
       <div class="f-w-item">
         <div class="f-w-img">
-          <img src="/img/4.gif" alt="" />
+          <img src="/Assest/weather app.jpeg" alt="" />
         </div>
         <div class="f-w-text">
           <h1><a href="#">
-              CSS Grid vs Flexbox</h1></a>
+            A basic weather App with HTML AND CSS</h1></a>
 
           <p class="f-w-article">
-            Grid and flexbox. The basic difference between CSS Grid Layout and
-            CSS Flexbox Layout is that flexbox was designed for layout in one
-            dimension - either a row or a column. Grid was designed for
-            two-dimensional layout - rows, and columns at the same time.
+            HTML stands for Hyper Text Markup Language HTML is the standard
+            markup language for Web pages HTML elements are the building
+            blocks of HTML pages HTML elements are represented by <> tags
           </p>
 
           <!-- live and Github  -->
           <div class=" liveGithub">
-            <a class="live" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/"
+            <a class="live" href="https://akpabla-weather-app-84jk.netlify.app"
               target="_blank"><span>Live</span></a>
-            <a class="github" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/" target="_blank"> Github </a>
+            <a class="github" href="https://github.com/Jane-Akpabla/weather-app.git" target="_blank"> Github </a>
           </div>
         </div>
       </div>
@@ -169,11 +217,11 @@
       <hr />
       <div class="f-w-item">
         <div class="f-w-img">
-          <img src="/img/1.jpg" alt="" />
+          <img src="/Assest/to do list.jpeg" alt="" />
         </div>
-        <div class="f-w-text">
+        <div class="f-w-text">TO DO LIST
           <h1><a href="#">
-              What is HTML?</h1></a>
+              </h1></a>
 
           <p class="f-w-article">
             HTML stands for Hyper Text Markup Language HTML is the standard
@@ -182,20 +230,18 @@
           </p>
 
           <div class=" liveGithub">
-            <a class="live" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/"
+            <a class="live" href="https://akpbala-simple-84jk.netlify.app"
               target="_blank"><span>Live</span></a>
-            <a class="github" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/" target="_blank"> Github </a>
+            <a class="github" href="https://github.com/Jane-Akpabla/To-do-list.git" target="_blank"> Github </a>
           </div>
         </div>
       </div>
-
-
       <!-- PROJECT THREE  -->
       <div class="f-w">
         <hr />
         <div class="f-w-item">
           <div class="f-w-img">
-            <img src="/img/2.png" alt="" />
+            <img src="/Assest/dashboard 1.jpeg" alt="" />
           </div>
           <div class="f-w-text">
             <h1> <a href="#">
@@ -218,9 +264,8 @@
 
 
         <!-- PROJECT FOUR  -->
-        <div class="f-w-item">
           <div class="f-w-img">
-            <img src="/img/3-gif.gif" alt="" />
+            <img src="/Assest/dashboard4.jpeg" alt="Data Analytics dashboard" />
           </div>
           <div class="f-w-text">
             <h1><a href="#">
@@ -232,7 +277,7 @@
               A responsive web design will automatically adjust for different screen sizes and viewports.
             </p>
 
-            <div class=" liveGithub">
+            <div class=" liveGi <divthub">
               <a class="live" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/"
                 target="_blank"><span>Live</span></a>
               <a class="github" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/" target="_blank"> Github </a>
@@ -259,7 +304,7 @@
       <a href="#"><img src="/img/linkedin.svg" alt="" />
       </a>
     </div>
-    <p>Copyright © 2022 All rights reserved <br><br> <b> ©Taleh Rzayev </b></p>
+    <p>Copyright © 2022 All rights reserved <br><br> <b> © Janet Akpabla</b></p>
   </footer>
   <!-- END OF THE FOOTER SECTION  -->
 

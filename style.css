@@ -131,7 +131,28 @@ header h1 {
   transition: all 0.3s ease 0s;
   gap: 50px;
   color: #000000;
+
+}
+.language-div{
+  margin-bottom: 15px;
  
+}
+
+
+/* experience section ==================*/
+.icon{
+  width: 10%;
+  display: flex;
+  margin-right: 50px;
+}
+
+.details-container{
+  display: flex;
+  justify-content: center;
+  
+}
+.language-div{
+  display: flex;
 }
 
 
@@ -226,6 +247,9 @@ section.section2 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+
+/* section */
 .section3 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -243,7 +267,7 @@ section.section2 {
   gap: 20px;
 }
 .f-w-img img {
-  width: 250px;
+  width: 300px;
   height: 180px;
   border-radius: 10px;
   transition: all 0.3s ease 0s;
