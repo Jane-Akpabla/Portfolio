@@ -1,389 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/mediaqueries.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+  <title> Portfolio website | Janet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaquerie.css" />
 </head>
+
 <body>
+
+
+  <!-- 
+      =================================
+      
+      Nav Bar section
+      =========================== 
     
-    <nav id="desktop-nav">
-        <div class="logo">Janet Akpabla</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-nav">
-        <div class="logo"> Janet Akpabla</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
-      <section id="profile">
-        <div class="section__pic-container">
-          <img src="/imaages/portrait.jpeg" alt="Janet Akpabla profile picture" />
-        </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Janet Akpabla</h1>
-          <p class="section__text__p2"> Junior Frontend Developer</p>
-          
-          <div id="socials-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='https://linkedin.com/'"
-            />
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-              onclick="location.href='https://github.com/'"
-            />
-          </div>
-        </div>
-      </section>  
-      <!-- =============================== ABOUT SECTION ==================================== -->
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <!-- CV and Contact information -->
-        <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="window.open('./imaages/JANET.pdf')"
-            >
-              Download CV
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-              Contact Info
-            </button>
-          </div>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/about-pic.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>2+ years <br />Frontend Development</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
+    -->
+  <section>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="toggle">
+        <a href="#">
+          <ion-icon name="menu-outline"></ion-icon>
+        </a>
+      </div>
+    </nav>
+  </section>
+  <!-- END OF THE NAV SECTION  -->
 
-      <!-- ----------------------- end of about me -------------------------------  -->
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>SASS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>TypeScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Material UI</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PostgreSQL</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Express JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-      </section>
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-3.png"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2024 Janet Akpabla. All Rights Reserved.</p>
-      </footer>
-  
 
-    <script src="src/script.js"></script>
+  <!--
+      ================================
+      
+      Header section  ; about me 
+    ==============================
+    
+    -->
+  <header>
+    <div class="container">
+      <div class="section1">
+        <div class="head-img">
+          <img src="https://avatars.githubusercontent.com/u/70813725?v=4" alt="" />
+        </div>
+        <div class="img-article">
+          <h1>Hi, I am Taleh, Student at Algoritmika</h1>
+          <p class="about">
+            This project was my first responsiv portfilo website. I learnt a
+            bit about html using div, nav, image and link tags. I also created
+            a css file and picked out tags using classes and direct names and
+            stylised my html to make it look nicer. I then learnt how to use
+            the terminal and then how to use git, so I could backup files to
+            github and keep track of changes, etc.
+          </p>
+
+          <!--  This button  to link to download the resume -->
+          <a href="#" class="Download "><button
+            onclick="window.open('./assets/resume-example.pdf')"
+            >Download Resume</button></a>
+        
+          <!--  Gtiub and Linkedin links  -->
+          <div class="social-icons">
+            <a href=""> 
+              <img class="socialicons" src="/img/github.png" alt=" Github">
+                 </a>
+            <a href=""> 
+              <img class="socialicons" src="/img/linkedin.svg" alt="">
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END OF THE HEADER SECTION  -->
+
+  <!--  
+      ===========================
+      
+      EXPERIENCE SECTION
+      ========================
+    
+    -->
+  <section class="section2">
+    <div class="container">
+      <div class="section-p">
+        <p class="r-p">Recent posts</p>
+        <p class="v-p"><a href="">View All</a></p>
+      </div>
+      <div class="recent-posts">
+        <div class="post-item">
+          <h1>Making a design system from scratch</h1>
+          <p>12 Feb 2022 Design | Pattern</p>
+          <p class="post-article">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="post-item">
+          <h1>Get started with Flexbox.</h1>
+          <p>13 Feb 2022 Design | Css</p>
+          <p class="post-article">
+            Flexbox is a layout in CSS3. Flexbox is used to make responsive
+            layouts and components on a webpage. Using is a good choice to
+            use in CSS so you can design the page responsively. Here is a
+            basic guide to getting starting with flexbox.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  END OF THE EXPERIENCE SECTION  -->
+
+
+  <!--  
+      
+      ===========================
+      PROJECT SECTION 
+      =======================
+    -->
+  <section class="section3">
+    <div class="container">
+      <div class="c-p">
+        <p>Featured works</p>
+      </div>
+
+
+      <!-- PROJECT ONE  -->
+      <div class="f-w-item">
+        <div class="f-w-img">
+          <img src="/img/4.gif" alt="" />
+        </div>
+        <div class="f-w-text">
+          <h1><a href="#">
+              CSS Grid vs Flexbox</h1></a>
+
+          <p class="f-w-article">
+            Grid and flexbox. The basic difference between CSS Grid Layout and
+            CSS Flexbox Layout is that flexbox was designed for layout in one
+            dimension - either a row or a column. Grid was designed for
+            two-dimensional layout - rows, and columns at the same time.
+          </p>
+
+          <!-- live and Github  -->
+          <div class=" liveGithub">
+            <a class="live" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/"
+              target="_blank"><span>Live</span></a>
+            <a class="github" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/" target="_blank"> Github </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PROJECT TWO  -->
+      <hr />
+      <div class="f-w-item">
+        <div class="f-w-img">
+          <img src="/img/1.jpg" alt="" />
+        </div>
+        <div class="f-w-text">
+          <h1><a href="#">
+              What is HTML?</h1></a>
+
+          <p class="f-w-article">
+            HTML stands for Hyper Text Markup Language HTML is the standard
+            markup language for Web pages HTML elements are the building
+            blocks of HTML pages HTML elements are represented by <> tags
+          </p>
+
+          <div class=" liveGithub">
+            <a class="live" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/"
+              target="_blank"><span>Live</span></a>
+            <a class="github" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/" target="_blank"> Github </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PROJECT THREE  -->
+      <div class="f-w">
+        <hr />
+        <div class="f-w-item">
+          <div class="f-w-img">
+            <img src="/img/2.png" alt="" />
+          </div>
+          <div class="f-w-text">
+            <h1> <a href="#">
+                Get started with Flexbox.</h1></a>
+            <p class="f-w-article">
+              Flexbox is a layout in CSS3. Flexbox is used to make responsive
+              layouts and components on a webpage. Using is a good choice to
+              use in CSS so you can design the page responsively. Here is a
+              basic guide to getting starting with flexbox.
+            </p>
+
+            <div class=" liveGithub">
+              <a class="live" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/"
+                target="_blank"><span>Live</span></a>
+              <a class="github" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/" target="_blank"> Github </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+
+        <!-- PROJECT FOUR  -->
+        <div class="f-w-item">
+          <div class="f-w-img">
+            <img src="/img/3-gif.gif" alt="" />
+          </div>
+          <div class="f-w-text">
+            <h1><a href="#">
+                Responsive Web Design</h1>
+            </a>
+
+            <p class="f-w-article">
+              Responsive web design is about creating web pages that look good on all devices!
+              A responsive web design will automatically adjust for different screen sizes and viewports.
+            </p>
+
+            <div class=" liveGithub">
+              <a class="live" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/"
+                target="_blank"><span>Live</span></a>
+              <a class="github" href="https://talehrzayev.github.io/CSS-Grid-vs-Flexbox/" target="_blank"> Github </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </section>
+
+  <!-- END THE PROJECT SECTION  -->
+
+
+  <!-- FOOTER SECTION  -->
+  <footer>
+    <div class="social-buttons">
+      <a href="#"><img src="/img/fb.svg" alt="" />
+      </a>
+      <a href="#"><img src="/img/insta.svg" alt="" />
+      </a>
+      <a href="#"><img src="/img/twitter.svg" alt="" />
+      </a>
+      <a href="#"><img src="/img/linkedin.svg" alt="" />
+      </a>
+    </div>
+    <p>Copyright © 2022 All rights reserved <br><br> <b> ©Taleh Rzayev </b></p>
+  </footer>
+  <!-- END OF THE FOOTER SECTION  -->
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".nav-links").hasClass("active")) {
+          $(".nav-links").removeClass("active");
+          $(this).find("a").html('<ion-icon name="menu-outline"></ion-icon>');
+        } else {
+          $(".nav-links").addClass("active");
+          $(this)
+            .find("a")
+            .html('<ion-icon name="close-outline"></ion-icon>');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
